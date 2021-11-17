@@ -1,4 +1,6 @@
 <div class="c-content c-content--{{ include.type }}">
     {% if include.type == "note" %}{% bookshop_include tag text="Note" %}{% endif %}
-    {{ include.content_html }}
+    
+    {% assign content_output = include.content_html %}
+    {{ content_output }}
 </div>
